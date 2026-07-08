@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Placement Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+<h2>🎓Smart Placement Prediction</h2>
+
+<form action="/predict" method="POST">
+
+<label>cgpa:</label>
+<input type="number" step="0.01" name="cgpa"><br><br>
+
+<label>Internships:</label>
+<input type="number" name="internships"><br><br>
+
+<label>Projects:</label>
+<input type="number" name="projects"><br><br>
+
+<label>Aptitude Score:</label>
+<input type="number" name="aptitude"><br><br>
+
+<label>Soft Skills:</label>
+<input type="number" name="softskills"><br><br>
+
+<label>10th Mark:</label>
+<input type="number" name="ssc"><br><br>
+
+<label>12th Mark:</label>
+<input type="number" name="hsc"><br><br>
+<label>Workshops/Certifications:</label>
+<input type="number" name="workshops"><br><br>
+
+<input type="submit" value="Predict Placement">
+
+
+</form>
+</div>
+</body>
+</html>
+
